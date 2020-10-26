@@ -22,11 +22,13 @@
         searchForm.addEventListener('button',ret)
 
         function ret(e){
-          const proxyurl = "https://cors-anywhere.herokuapp.com/";
           const apikey='a4ededa4314f4054b67f21aae9def76f'
           let topic = 'Sports';
-          let url=`http://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
-          fetch(proxyurl+url).then((res)=>{
+          // let url=`http://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?q=${topic}&${apikey}`
+          const x = 'http://newsapi.org/v2/everything?q=bitcoin&from=2020-09-26&sortBy=publishedAt&apiKey=a4ededa4314f4054b67f21aae9def76f';
+          const y = 'http://cors-anywhere.herokuapp.com/';
+          const url = `${y}${x}`;
+          fetch(url).then((res)=>{
             return res.json()
           }).then((data)=>{
             console.log(data)
