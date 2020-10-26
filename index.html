@@ -24,7 +24,7 @@
         function ret(e){
           
           const apikey='a4ededa4314f4054b67f21aae9def76f'
-          let topic = "Sports";
+          let topic = 'Sports';
           let url=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
           fetch(url).then((res)=>{
             return res.json()
