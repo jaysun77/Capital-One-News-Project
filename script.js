@@ -1,21 +1,29 @@
-        const searchForm=document.querySelector('.button');
+        //const searchForm=document.querySelector('.button');
         const newsList= document.querySelector(".news-list");
-        searchForm.addEventListener('button',ret)
+        //searchForm.addEventListener('button',ret)
 
-        function ret(e){
+        function ret(e,topi){
+          newsList.innerHTML=''
           const apikey='a4ededa4314f4054b67f21aae9def76f'
-          let topic = 'Sports';
-          //let url=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
-          const x = 'http://newsapi.org/v2/everything?q=bitcoin&from=2020-09-26&sortBy=publishedAt&apiKey=a4ededa4314f4054b67f21aae9def76f';
+          let topic = topi;
+          console.log(topi)
+          let x=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
           const y = 'http://cors-anywhere.herokuapp.com/';
           const url = `${y}${x}`;
           fetch(url).then((res)=>{
             return res.json()
           }).then((data)=>{
-            console.log(data)
+            //console.log(data)
+            data.articles.forEach(article=>{
+              let li=document.createElement('li');
+              let a=document.createElement('a');
+              a.setAttribute('href', article.url);
+              a.setAttribute('target','_bblank');
+              a.textContent=article.title;
+              li.appendChild(a);
+              newsList.appendChild(li);
+            })
           })
           
           
         }
-
-

@@ -6,9 +6,19 @@
 }
 .sport{
     position:absolute;
-    top:20%;
+    top:10%;
+    left:150px
+}
+.Technology{
+    position:absolute;
+    top:10%;
+}
+.Entertainment{
+    position:absolute;
+    top:10%;
+    left:263px
 }
 .container{
     position:absolute;
-    top: 30%;
+    top: 15%;
 }
