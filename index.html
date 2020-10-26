@@ -9,7 +9,7 @@
     <title>News</title>
   </head>
   <body> 
-    <button class="search" action="">
+    <button class="button" action="">
       <input type="button" value="Sports" onclick=>
     </button>
     <div class="container">
@@ -19,6 +19,14 @@
     <script>
         const searchForm=document.querySelector('.search');
         const newsList= document.querySelector(".news-list");
+        searchForm.addEventListener('button',ret)
+
+        function ret(e){
+          const apikey='a4ededa4314f4054b67f21aae9def76f'
+          let topic = button.value;
+        }
+
+
 
     </script>
 
