@@ -10,7 +10,7 @@
   </head>
   <body> 
     <button class="button" action="">
-      <input type="button" value="Sports" onclick=>
+      <input type="button" value="Sports" onclick="ret()">
     </button>
     <div class="container">
       <ul class="class-list"></ul>
@@ -24,7 +24,14 @@
         function ret(e){
           const apikey='a4ededa4314f4054b67f21aae9def76f'
           let topic = button.value;
-          console.log(topic)
+          let url=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
+          fetch(url).then((res)=>{
+            return res.json()
+          }).then((data)=>{
+            consol.log(data)
+          })
+          
+          
         }
 
 
