@@ -4,21 +4,53 @@
     box-sizing: border-box;
     list-style: none;
 }
+.Header { text-align: center }
 .sport{
     position:absolute;
     top:10%;
-    left:150px
+    background-color:purple;
+    color:white;
+    left:30%
 }
 .Technology{
     position:absolute;
+    color:white;
     top:10%;
+    background-color:blue;
+    left:10%
 }
 .Entertainment{
     position:absolute;
     top:10%;
-    left:263px
+    left:263px;
+    background-color:red;
+    color:white;
+    left:48%;
 }
 .container{
+    left:10%;
     position:absolute;
-    top: 15%;
+    top: 20%;
 }
+div{
+    left:20%;
+    border:1px solid #000;
+    opacity: 0.95;
+    font-family:arial;
+    height:500;
+    width:200px;
+  }
+ul{
+    left:20%;
+    opacity: 1;
+    list-style:none;
+
+    max-height:500px;
+    margin:0;
+    overflow:auto;
+    padding:0;
+    text-indent:10px;
+  }
+  li{
+    line-height:25px;
+  }

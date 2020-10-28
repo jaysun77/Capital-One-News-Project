@@ -2,18 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/21/21601.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="style.css" />
     <title>News</title>
   </head>
-  <body> 
+
+  <body>
+    <style>
+      h1 {text-align: center;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      color:powderblue;}
+      body {
+        background-image: url('https://exitstrategyus.com/wp-content/uploads/2018/08/breakingnews.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <h1>Breaking News on Technology, Sports, and Entertainment</h1>
     <button class="Entertainment" input type="button" value="Entertainment" onclick="ret('','Entertainment');"/>Entertainment </button>
     <button class="sport" input type="button" value="Sports" onclick="ret('','Sports');"/>Sports </button>
     <button class="Technology" input type="button" value="Technology" onclick="ret('','Technology');"/>Technology </button>
-    <div class="container">
-      <ul class="news-list"></ul>
+
+    <div class="container" id="area">
+      <ul class="news-list">
+      </ul>
     </div>
 
     <script type="text/javascript" src="script.js">
