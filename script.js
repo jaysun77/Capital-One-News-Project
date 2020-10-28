@@ -8,7 +8,7 @@ function ret(e,topi){
   let topic = topi;
   let x=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
   const y = 'http://cors-anywhere.herokuapp.com/';
-  const url = `${y}${x}`;
+  const url = `${x}`;
   fetch(url).then((res)=>{
     return res.json()
   }).then((data)=>{
