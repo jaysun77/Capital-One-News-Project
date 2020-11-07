@@ -12,3 +12,8 @@ Imagine you had the chance to create a web application that would allow users to
 # Screen Shots
 News Web App Home Page:
 ![Home Page](https://i.imgur.com/vw03IEY.png)
+News on Technology:
+![Tech](https://i.imgur.com/Niod1Ct.png)
+News specifically on Apple within Technology
+![Apple](https://i.imgur.com/w9Lgz6I.png)
+
