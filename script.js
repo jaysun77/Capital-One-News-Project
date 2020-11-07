@@ -34,7 +34,10 @@ function ret(s,topi){
       var img = document.createElement('img');
       let au=document.createElement('au');
       au.textContent='Source: '+article.source.name+', Author: '+article.author+', '+article.publishedAt.substring(0, 10);
-      img.src = article.urlToImage;
+      if (article.urlToImage!=null)
+        img.src = article.urlToImage;
+      else
+        img.src = "https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2020/05/BREAKING-NEWS-GENERIC-1.jpg?w=1920&h=1080&crop=1";
       img.style.height ='100px';
       img.style.width ='150px';
 
