@@ -13,11 +13,11 @@ function ret(s,topi){
   
   if(s==1){
     let inp =input.value;
-    url=`https://newsapi.org/v2/everything?q=${inp}&country=us&category=${topic}&apiKey=${apikey}`
+    url=`https://newsapi.org/v2/top-headlines?q=${inp}&country=us&category=${topic}&apiKey=${apikey}`
   }
   else{
     topic = topi;
-    url=`https://newsapi.org/v2/everything?country=us&category=${topic}&apiKey=${apikey}`
+    url=`https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${apikey}`
   }
   
   
