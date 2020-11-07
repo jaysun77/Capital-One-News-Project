@@ -1,14 +1,26 @@
 const newsList= document.querySelector(".news-list");
-function ret(e,topi){
+const search=document.querySelector('.search');
+const input=document.querySelector('.input');
+
+
+
+var topic="";
+function ret(s,topi){
+  var url;
   newsList.innerHTML=''
-  if(topi==="Sports"){
-    document.querySelector("#area").style.backgroundimage="url("+ "https://www.liberty.edu/champion/wp-content/uploads/2020/03/SPORTS-800x280.jpg" + ")";
+  
+  const apikey='78b9d599c4f94f8fa3afb1a5458928d6';
+  
+  if(s==1){
+    let inp =input.value;
+    url=`https://newsapi.org/v2/top-headlines?q=${inp}&country=us&category=${topic}&apiKey=${apikey}`
   }
-  const apikey='78b9d599c4f94f8fa3afb1a5458928d6'
-  let topic = topi;
-  let x=`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apikey}`
-  const y = 'http://cors-anywhere.herokuapp.com/';
-  const url = `${y}${x}`;
+  else{
+    topic = topi;
+    url=`https://newsapi.org/v2/top-headlines?q=&country=us&category=${topic}&apiKey=${apikey}`
+  }
+  
+  
   fetch(url).then((res)=>{
     return res.json()
   }).then((data)=>{
@@ -34,6 +46,5 @@ function ret(e,topi){
       newsList.appendChild(au);
     })
   })
-
 
 }

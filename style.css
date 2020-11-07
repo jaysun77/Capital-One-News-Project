@@ -27,10 +27,24 @@
     color:white;
     left:48%;
 }
+.search{
+    position:absolute;
+    left: 10%;
+    top: 18%;
+}
+.sub{
+    background-color: lightblue;
+    position:absolute;
+    left: 110%;
+    
+    opacity: 0.95;
+    top:0%
+}
 .container{
     left:10%;
     position:absolute;
-    top: 20%;
+    background-color: powderblue;
+    top: 25%;
 }
 div{
     left:20%;

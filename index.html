@@ -14,18 +14,23 @@
     <style>
       h1 {text-align: center;
       font-family: "Comic Sans MS", cursive, sans-serif;
-      color:powderblue;}
+      color:red;}
       body {
-        background-image: url('https://exitstrategyus.com/wp-content/uploads/2018/08/breakingnews.jpg');
+        background-image: url('https://lh3.googleusercontent.com/proxy/eAASRpF2neKEkYvkkGxR_b7Jbc_0nG2xOwtmVcVlOM3jIXb1ZEVJH3D6I2neZNjxxnjkLaCJQOiDLFFV5oyR9bZpXp-RImzhievqCRWEuM-QQtuKS2XW41E0p5QgR6jZmRkPfw');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
       }
     </style>
     <h1>Breaking News on Technology, Sports, and Entertainment</h1>
-    <button class="Entertainment" input type="button" value="Entertainment" onclick="ret('','Entertainment');"/>Entertainment </button>
-    <button class="sport" input type="button" value="Sports" onclick="ret('','Sports');"/>Sports </button>
-    <button class="Technology" input type="button" value="Technology" onclick="ret('','Technology');"/>Technology </button>
+    <button class="Entertainment" input type="button" value="Entertainment" onclick="ret(0,'entertainment');"/>Entertainment </button>
+    <button class="sport" input type="button" value="Sports" onclick="ret(0,'sports');"/>Sports </button>
+    <button class="Technology" input type="button" value="Technology" onclick="ret(0,'technology');"/>Technology </button>
+
+    <form class="search" type="button" action="">
+      <input class="input" type="text" autocomplete="off"/>
+      <input class="sub" type="button" value="Search" onclick="ret(1);"/>
+    </form>
 
     <div class="container" id="area">
       <ul class="news-list">
