@@ -17,7 +17,7 @@ function ret(s,topi){
   }
   else{
     topic = topi;
-    url=`https://newsapi.org/v2/top-headlines?q=&country=us&category=${topic}&apiKey=${apikey}`
+    url=`https://newsapi.org/v2/top-headlines?country=us&category=${topic}&apiKey=${apikey}`
   }
   
   
@@ -48,3 +48,4 @@ function ret(s,topi){
   })
 
 }
+
