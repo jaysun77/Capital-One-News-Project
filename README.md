@@ -4,7 +4,7 @@ Can't find the latest news on Sports, Entertainment ,or Technology? With the New
 # Challenge Prompt From Mind Sumo
 The internet is an unlimited source of information. We want an easy way to sort through and find news articles specific to the following three categories: 
 
-Entertainment 
+Entertainment
 Sports
 Technology
 Imagine you had the chance to create a web application that would allow users to search through global news in order to locate news pertaining to the three categories listed above. How would you go about creating such an app?
